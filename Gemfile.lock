@@ -76,11 +76,11 @@ GEM
     mime-types-data (3.2016.0521)
     mini_portile2 (2.2.0)
     minitest (5.10.3)
-    moment_timezone-rails (0.5.0)
     multi_json (1.12.2)
     nio4r (2.1.0)
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
+    pg (0.21.0)
     puma (3.10.0)
     rack (2.0.3)
     rack-test (0.6.3)
@@ -164,7 +164,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
-  moment_timezone-rails
+  pg
   puma (~> 3.0)
   rails (~> 5.0.5)
   sass-rails (~> 5.0)
