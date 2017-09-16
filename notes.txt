@@ -1,0 +1,18 @@
+Controllers:
+  UsersController
+    Index
+    New
+    Create
+    Destroy
+    Edit
+    Update
+
+Models
+  User
+    Username
+    Some representation of timezone
+
+
+Routes
+  root -> UsersController.index
+  /new/ -> UsersController.new

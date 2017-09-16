@@ -10,7 +10,17 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+// moment-timezone without timezone data
+//= require moment-timezone
+//
+// moment-timezone with timezone data from 2010-2020
+//= require moment-timezone-with-data-2010-2020
+//
+// moment-timezone all timezone data
+//= require moment-timezone-with-data
+//
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require moment

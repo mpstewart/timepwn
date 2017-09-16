@@ -1,0 +1,11 @@
+<%= form_for @user do |f| %>
+  <div>
+    <%= f.label "Gamertag: " %><br>
+    <%= f.text_field :gamertag %>
+  </div>
+  <div>
+    <%= f.label "Timezone: " %><br>
+    <%= f.time_zone_select :timezone, TZInfo::Timezone.all.sort, :model => TZInfo::Timezone %>
+  </div>
+  <%= f.submit "Add user" %>
+<% end %>
