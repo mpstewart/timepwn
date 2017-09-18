@@ -1,9 +1,9 @@
 <%= form_for @user do |f| %>
-  <div>
+  <div class="gamertag">
     <%= f.label "Gamertag: " %><br>
     <%= f.text_field :gamertag %>
   </div>
-  <div>
+  <div class="timezone">
     <%= f.label "Timezone: " %><br>
     <%= f.time_zone_select :timezone, TZInfo::Timezone.all.sort, :model => TZInfo::Timezone %>
   </div>

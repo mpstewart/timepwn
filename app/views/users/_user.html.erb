@@ -1,10 +1,12 @@
-<div class = "user">
-  <h3><%= link_to user.gamertag, user %></h3>
+<div class = "user" style="padding-bottom: 25px;">
+  <h3><%= user.gamertag %></h3>
   <p><%= user.timezone %></p>
 
-  <p>
+  <p style="float: left;">
     <label>Local time: </label>
     <%= user.local_time %>
   </p>
+
+  <p style="float: right;"><%= link_to "Remove", user, method: "DELETE" %></p>
 
 </div>
