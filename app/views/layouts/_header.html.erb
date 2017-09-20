@@ -1,5 +1,9 @@
 <div class="header">
-  <h1 style="padding-top: 5px; margin: 0px; float: left;"><%= link_to "TimePWN", root_path %></h1>
+  <%= image_tag 'logo.png', width: 35, height: 35, class: "logo" %>
+  <h1 style="padding-top: 5px; margin: 0px; float: left;">
+    <%= link_to "TimePWN", root_path %>
+  </h1>
+
   <span class="add_user" style="font-size: 50px; float: right; margin-right: 15px; margin-top: -10px;">
     <%= link_to "+", new_user_path %>
   </span>
