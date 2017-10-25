@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get '/about', to: "static#about"
+
   root "users#index"
   resources :users
 
