@@ -19,7 +19,6 @@
 
 $(document).ready(function(){
   $('.add_user').click(function() {
-    alert('it worked!');
     $('.hidden_form').slideDown(400);
   });
 }); 
