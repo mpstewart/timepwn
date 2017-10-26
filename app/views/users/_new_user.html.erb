@@ -1,4 +1,4 @@
-<%= form_for @user do |f| %>
+<%= form_for @user, html: {class: 'hidden_form new_user'} do |f| %>
   <div class="gamertag">
     <%= f.label "Gamertag: " %><br>
     <%= f.text_field :gamertag %>
