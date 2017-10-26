@@ -8,4 +8,7 @@
     <%= f.time_zone_select :timezone, TZInfo::Timezone.all.sort, :model => TZInfo::Timezone %>
   </div>
   <%= f.submit "Add user" %>
+  <%= f.button "Cancel", html: {class: "add_cancel"},
+                         type: 'button',
+                         onclick: '$(this).parent().slideUp(400);' %>
 <% end %>

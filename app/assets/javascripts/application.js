@@ -17,8 +17,13 @@
 //= require moment
 
 
-$(document).ready(function(){
-  $('.add_user').click(function() {
+$(document).on('ready', function(){
+  $('.add_user').click(function(){
     $('.hidden_form').slideDown(400);
+    $('#user_gamertag').focus();
   });
+
+  // $('.remove_user').click(function(){
+  //   $(this).parent().parent().remove();
+  // });
 }); 

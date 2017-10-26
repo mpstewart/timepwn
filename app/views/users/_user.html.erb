@@ -7,6 +7,13 @@
     <%= user.local_time %>
   </p>
 
-  <p style="float: right;"><%= link_to "Remove", user, method: "DELETE" %></p>
+  <p style="float: right;">
+    <%= link_to "Remove", 
+                user,
+                data: {confirm: "Are you sure?"},
+                method: "DELETE",
+                remote: true,
+                class: "remove_user"%> 
+  </p>
 
 </div>
