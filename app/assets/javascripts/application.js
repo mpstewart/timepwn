@@ -32,7 +32,7 @@ $(document).on('turbolinks:load', function(){
         url: `/users/${user_id}`,
         type: 'DELETE'
       });
-      user_box.slideUp();
+      $(this).parent().parent().slideUp();
     }
   });
 
