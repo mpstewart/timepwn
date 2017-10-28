@@ -24,11 +24,11 @@ $(document).on('turbolinks:load', function(){
     $('#user_gamertag').focus();
   });
 
-  $('button.remove_user').click(function(){
-    let user_id = $(this).attr("data-user-id");
+  $('button.remove_user').click(function() {
+    $user_id = $(this).attr("data-user-id");
     if (confirm("Are you sure?")) {
       $.ajax({
-        url: `/users/${user_id}`,
+        url: '/users/' + $user_id,
         type: 'DELETE'
       });
       $(this).parent().parent().slideUp();
@@ -36,6 +36,7 @@ $(document).on('turbolinks:load', function(){
   });
 
   $('.add_cancel').click(function(){
-    $(this).parent().slideUp(400);
+    new_user_box = $(this).parent();
+    new_user_box.slideUp(400);
   });
 }); 
