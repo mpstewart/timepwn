@@ -17,21 +17,26 @@
 //= require moment
 
 
-$(document).ready(function(){
+
+$(document).on('turbolinks:load', function(){
   $('.add_user').click(function(){
-    $('.hidden_form').show(400);
+    $('.hidden_form').slideDown(400);
     $('#user_gamertag').focus();
   });
 
-  $('.remove_user').click(function(){
-    let parent_div = $(this).parent().parent();
+  $('button.remove_user').click(function(){
+    let user_box = $(this).parent().parent();
     let user_id = $(this).attr("data-user-id");
     if (confirm("Are you sure?")) {
       $.ajax({
         url: `/users/${user_id}`,
-        type: 'DELETE' 
+        type: 'DELETE'
       });
-      parent_div.remove();
+      user_box.slideUp();
     }
+  });
+
+  $('.add_cancel').click(function(){
+    $(this).parent().slideUp(400);
   });
 }); 

@@ -1,0 +1,7 @@
+app/assets/javascripts/application.js
+app/assets/javascripts/users.coffee
+app/controllers/application_controller.rb
+app/views/layouts/application.html.erb
+app/views/users/_new_user.html.erb
+app/views/users/_user.html.erb
+app/views/users/index.html.erb
