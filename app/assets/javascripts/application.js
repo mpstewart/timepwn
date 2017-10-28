@@ -25,7 +25,6 @@ $(document).on('turbolinks:load', function(){
   });
 
   $('button.remove_user').click(function(){
-    let user_box = $(this).parent().parent();
     let user_id = $(this).attr("data-user-id");
     if (confirm("Are you sure?")) {
       $.ajax({
